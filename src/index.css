@@ -1,14 +1,22 @@
 .app-container{
-  width: 400px;
-  height: 400px;
+  max-width: 250px;
+  max-height: 700px;
+  text-align: center;
+  margin: 30px auto;
 }
 
 .calculator{
+  background-color: darkgray;
   display: grid;
-  grid-template-columns: repeat(4, 50px)
+  grid-template-columns: repeat(4,70px);
+  grid-gap: 1px;
+  justify-content: center;
+  height: 325px;
+  width: 290px;
 }
 
 .display{
+  background-color: rgb(233, 233, 233);
   border: 1px solid lightgray;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -17,14 +25,21 @@
   text-align: right;
   padding-right: 10px;
   padding-top: 5px;
+  margin: 4px 1px;
 }
 
 button{
-  height: 50px;
+  height: 60px;
   background-color: white;
-  border: 1px solid lightgray;
+  border: none;
+  margin: 0px 2px;
+  font-size: 20px;
 }
 
 button.operator{
   background-color: lightgray;
+}
+
+button:active{
+  background-color: orangered;
 }

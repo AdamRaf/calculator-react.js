@@ -89,5 +89,5 @@ function CalcButton(props){
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Calculator />
+  <div className="app-container"><Calculator /></div>
 );
